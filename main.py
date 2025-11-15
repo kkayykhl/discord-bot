@@ -15,14 +15,11 @@ async def on_ready():
     print(f"✅ Bot online sebagai {bot.user}")
 
 @bot.command()
-async def ping(ctx):
-    await ctx.send("pong!")
-
-@bot.command()
 async def halo(ctx):
     await ctx.send("haii <@{user_id}>")
 
 bot.run(os.getenv('TOKEN'))
+
 
 
 
